@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://sysfoundry-org.github.io/sysfoundry-org/latest/architecture.html</loc>
+<lastmod>2021-01-03T08:42:35.795Z</lastmod>
+</url>
+<url>
 <loc>https://sysfoundry-org.github.io/sysfoundry-org/latest/concept.html</loc>
-<lastmod>2021-01-03T03:34:18.676Z</lastmod>
+<lastmod>2021-01-03T08:42:35.795Z</lastmod>
 </url>
 <url>
 <loc>https://sysfoundry-org.github.io/sysfoundry-org/latest/ddd.html</loc>
-<lastmod>2021-01-03T03:34:18.676Z</lastmod>
+<lastmod>2021-01-03T08:42:35.795Z</lastmod>
 </url>
 <url>
 <loc>https://sysfoundry-org.github.io/sysfoundry-org/latest/index.html</loc>
-<lastmod>2021-01-03T03:34:18.676Z</lastmod>
+<lastmod>2021-01-03T08:42:35.795Z</lastmod>
+</url>
+<url>
+<loc>https://sysfoundry-org.github.io/sysfoundry-org/latest/starter/demo.html</loc>
+<lastmod>2021-01-03T08:42:35.795Z</lastmod>
+</url>
+<url>
+<loc>https://sysfoundry-org.github.io/sysfoundry-org/latest/starter/index.html</loc>
+<lastmod>2021-01-03T08:42:35.795Z</lastmod>
 </url>
 </urlset>

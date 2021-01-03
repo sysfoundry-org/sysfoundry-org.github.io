@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Welcome to Sysfoundry Documentation :: Sysfoundry Documentation</title>
-    <link rel="canonical" href="https://sysfoundry-org.github.io/sysfoundry-org/latest/index.html">
+    <title>Logical Architecture :: Sysfoundry Documentation</title>
+    <link rel="canonical" href="https://sysfoundry-org.github.io/sysfoundry-org/latest/architecture.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
     <script>var uiRootPath = '../../_'</script>
@@ -66,7 +66,7 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="index.html">Overview</a>
 <ul class="nav-list">
@@ -76,7 +76,7 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="ddd.html">Domain Orientation</a>
   </li>
-  <li class="nav-item" data-depth="2">
+  <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="architecture.html">Logical Architecture</a>
   </li>
 </ul>
@@ -129,43 +129,28 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="index.html" class="home-link is-current"></a>
+  <a href="index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">Sysfoundry</a></li>
     <li><a href="index.html">Overview</a></li>
+    <li><a href="architecture.html">Logical Architecture</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="file:///Users/vijayakumarmohan/workspace/git-sources/sysfoundry-org/sysfoundry-docs/components/sysfoundry-org/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="file:///Users/vijayakumarmohan/workspace/git-sources/sysfoundry-org/sysfoundry-docs/components/sysfoundry-org/modules/ROOT/pages/architecture.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Welcome to Sysfoundry Documentation</h1>
-<div id="preamble">
-<div class="sectionbody">
+<h1 class="page">Logical Architecture</h1>
 <div class="paragraph">
-<p>You are in the Sysfoundry Documentation site. Here you will find all the details about the Sysfoundry project.</p>
+<p>The diagram below provides a high level logical architecture of Sysfoundry. You can think of this as a reference architecture of the domain specific solution you can build using Sysfoundry.</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Sysfoundry is a <a href="https://en.wikipedia.org/wiki/Rapid_application_development">rapid application development</a> platform built on top of the <a href="https://spring.io/">Spring Platform</a> and the <a href="https://isis.apache.org/">Apache Isis</a> projects. The main focus of Sysfoundry is to enable application developers to conceptualize and rapidly develop domain specific applications.</p>
-</div>
-<div class="paragraph">
-<p>However unlike the traditional <a href="https://en.wikipedia.org/wiki/Rapid_application_development">RAD</a> way of thinking, Sysfoundry is more biased towards a Domain Driven development, instead of focussing on the UI driven practice espoused by <a href="https://en.wikipedia.org/wiki/Rapid_application_development">RAD</a> tools.</p>
-</div>
-<div class="paragraph">
-<p>Predominantly Sysfoundry adopts the <a href="https://en.wikipedia.org/wiki/Naked_objects">Naked Objects framework</a> methodology and is biased towards the Domain Driven Design paradigm of solving business domain problems.</p>
-</div>
-<div class="paragraph">
-<p>Sysfoundry relies heavily on the Apache Isis project for the core features. However it has extended <a href="https://isis.apache.org/">Apache Isis</a> in custom ways to support the needs of the Platform.</p>
-</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/logical_architecture.png" alt="logical architecture">
 </div>
 </div>
 </article>
