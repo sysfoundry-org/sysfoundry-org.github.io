@@ -144,7 +144,127 @@
 </aside>
 <article class="doc">
 <h1 class="page">Getting Started</h1>
-
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You can skip steps 1 &amp; 2 if you already have "Docker Desktop" &amp; "Git" in your environment.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Before we delve into details, lets look at Sysfoundry in action.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_setup_docker_desktop_for_your_os"><a class="anchor" href="#_1_setup_docker_desktop_for_your_os"></a>1. Setup Docker Desktop for your OS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Sysfoundry Dev environment relies on the Docker for Desktop tool. You can access Docker Desktop for your OS <a href="https://www.docker.com/products/docker-desktop">here</a></p>
+</div>
+<div class="paragraph">
+<p>Once you have installed the <a href="https://www.docker.com/products/docker-desktop">Docker Desktop</a> tool on your machine, configure the Docker Desktop tool to change the resources to use atlease 4 core &amp; 4 GB RAM. You can find the relevant documentation from Docker. For example the one for Mac OS is <a href="https://docs.docker.com/docker-for-mac/">here</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_setup_git_for_your_os"><a class="anchor" href="#_2_setup_git_for_your_os"></a>2. Setup Git for your OS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Setup Git from <a href="https://git-scm.com/downloads">here</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_configure_your_hosts_file"><a class="anchor" href="#_3_configure_your_hosts_file"></a>3. Configure your hosts file</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The sysfoundry base dev environment requires your hosts configuration to point "keycloak" to your local host ip "127.0.0.1"</p>
+</div>
+<div class="paragraph">
+<p>You can find instructions on how to do this for your relevent os <a href="https://linuxize.com/post/how-to-edit-your-hosts-file/">here</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_checkout_sysfoundry_base_dev_deployment_scripts"><a class="anchor" href="#_4_checkout_sysfoundry_base_dev_deployment_scripts"></a>4. Checkout Sysfoundry Base Dev Deployment scripts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once above mentioned steps are done, run the following command from a folder on your machine. Assume for the purposes of this document this folder is being referred to as SYSFOUNDRY_ORG_HOME.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">git clone https://github.com/sysfoundry-org/deployment.git</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_startup_sysfoundry_base"><a class="anchor" href="#_5_startup_sysfoundry_base"></a>5. Startup Sysfoundry Base</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">cd $SYSFOUNDRY_ORG_HOME/deployment/dev/solutions/sysfoundry-dev-base/</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">docker-compose up -d</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If everything goes well, you should be able to access the Sysfoundry Base environment with the following URL</p>
+</div>
+<div class="paragraph">
+<p><a href="http://localhost:9090/wicket/" class="bare">http://localhost:9090/wicket/</a></p>
+</div>
+<div class="paragraph">
+<p>You should be redirected to your IAM Login as below for a fictional "XYZ-SOLUTION".</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/iam_login_base_dev.png" alt="iam login base dev" width="90%">
+</div>
+</div>
+<div class="paragraph">
+<p>Enter the below credentials</p>
+</div>
+<div class="paragraph">
+<p><strong>Username : user1</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Password : user1</strong></p>
+</div>
+<div class="paragraph">
+<p>Once you login, you will be landing on the App Dashboard as shown below</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/app_dashboard_dev.png" alt="app dashboard dev" width="90%">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_6_shutdown_sysfoundry_base"><a class="anchor" href="#_6_shutdown_sysfoundry_base"></a>6. Shutdown Sysfoundry Base</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once you playaround / explore the Sysfoundry Base environment , you can bring down the whole environment with the below simple command.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">docker-compose down</code></pre>
+</div>
+</div>
+</div>
+</div>
 </article>
   </div>
 </main>
